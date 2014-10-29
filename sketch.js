@@ -27,11 +27,12 @@ function setup(){
 
    //러버덕
    count=1920;
-   //자동차1
-   count1=1920;
+   //자동차
+   count1=2000;
    //지느러미
    count2=1920;
-   count3=1920;
+   //자동차1
+   count3=2000;
    //자동차2
    count4=2000;
 }
@@ -52,8 +53,15 @@ function draw(){
 } 
 
 //ěëě°¨
-   drawCar1(count4,437);
-   count4=count4+12;
+   drawCar1(count3,437);
+   count3=count3+12;
+   if(count3>2000){
+   count3=0;
+} 
+
+//ěëě°¨
+   drawCar2(count4,437);
+   count4=count4+8;
    if(count4>2000){
    count4=0;
 } 
@@ -2061,37 +2069,6 @@ rect(x-80,y+230,240,10);
 
 function drawCar(x,y){
 
-fill(241,14,81);
-rect(x-13,y+4,46,6);
-rect(x,y,15,4);
-rect(x-1,y+1,1,1);
-rect(x-4,y+3,1,1);
-rect(x-3,y+2,3,2);
-rect(x+16,y+1,1,1);
-rect(x+18,y+3,1,1);
-rect(x+16,y+2,2,2);
-rect(x-15,y+6,1,4);
-rect(x-6,y+11,5,1);
-rect(x+21,y+10,6,1);
-rect(x+21,y+11,5,1);
-
-
-fill(95,179,39);
-rect(x-13,y+4,46,6);
-rect(x,y,15,4);
-rect(x-1,y+1,1,1);
-rect(x-4,y+3,1,1);
-rect(x-3,y+2,3,2);
-rect(x+16,y+1,1,1);
-rect(x+18,y+3,1,1);
-rect(x+16,y+2,2,2);
-rect(x-15,y+6,1,4);
-rect(x-6,y+11,5,1);
-rect(x+21,y+10,6,1);
-rect(x+21,y+11,5,1);
-
-
-
 fill(0,185,209);
 rect(x-13,y+4,46,6);
 rect(x,y,15,4);
@@ -2110,38 +2087,8 @@ rect(x+21,y+11,5,1);
 
 function drawCar1(x,y){
 
-fill(241,14,81);
-rect(x-13,y+4,46,6);
-rect(x,y,15,4);
-rect(x-1,y+1,1,1);
-rect(x-4,y+3,1,1);
-rect(x-3,y+2,3,2);
-rect(x+16,y+1,1,1);
-rect(x+18,y+3,1,1);
-rect(x+16,y+2,2,2);
-rect(x-15,y+6,1,4);
-rect(x-6,y+11,5,1);
-rect(x+21,y+10,6,1);
-rect(x+21,y+11,5,1);
 
-
-fill(95,179,39);
-rect(x-13,y+4,46,6);
-rect(x,y,15,4);
-rect(x-1,y+1,1,1);
-rect(x-4,y+3,1,1);
-rect(x-3,y+2,3,2);
-rect(x+16,y+1,1,1);
-rect(x+18,y+3,1,1);
-rect(x+16,y+2,2,2);
-rect(x-15,y+6,1,4);
-rect(x-6,y+11,5,1);
-rect(x+21,y+10,6,1);
-rect(x+21,y+11,5,1);
-
-
-
-fill(0,185,209);
+fill(238,50,47);
 rect(x-13,y+4,46,6);
 rect(x,y,15,4);
 rect(x-1,y+1,1,1);
@@ -2155,6 +2102,25 @@ rect(x-6,y+11,5,1);
 rect(x+21,y+10,6,1);
 rect(x+21,y+11,5,1);
 }
+
+function drawCar2(x,y){
+
+
+fill(45,179,74);
+rect(x-13,y+4,46,6);
+rect(x,y,15,4);
+rect(x-1,y+1,1,1);
+rect(x-4,y+3,1,1);
+rect(x-3,y+2,3,2);
+rect(x+16,y+1,1,1);
+rect(x+18,y+3,1,1);
+rect(x+16,y+2,2,2);
+rect(x-15,y+6,1,4);
+rect(x-6,y+11,5,1);
+rect(x+21,y+10,6,1);
+rect(x+21,y+11,5,1);
+}
+
 
 function drawDuck1(x,y){
 
